@@ -14,9 +14,9 @@ make
 Then you should have a nice brainfuck interpreter :)
 
 ##Usage
-To use it you need to type ```bash ./brainfuck scriptname.b```
+To use it you need to type ```./brainfuck scriptname.b```
 If you want to run it in verbose mode, add the option -v
-If you want some help type ```bash./brainfuck -h``` and finally ```./brainfuck -s```
+If you want some help type ```./brainfuck -h``` and finally ```./brainfuck -s```
 to have some help about Brainfuck syntax.
 
 ##Addition to "standard" Brainfuck
