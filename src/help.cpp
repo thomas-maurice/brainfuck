@@ -32,8 +32,9 @@ void ext_help() {
   cout << "brainfuck : just a brainfuck interpreter." << endl;
   cout << "\tAuthor: Thomas Maurice" << endl;
   cout << "\tVersion: " << VMAJOR << "." << VMINOR << " " << PLATEFORM << endl << endl;
-  cout << "Syntax: brainfuck [-h|-s] <script>" << endl;
+  cout << "Syntax: brainfuck [-h|-s|-v] <script>" << endl;
   cout << "\t-h option displays this help" << endl;
+  cout << "\t-v starts a script in verbose mode" << endl;
   cout << "\t-s option provides help on the brainfuck language" << endl;
   cout << "\trunning the program passing it a script name will make it run the script" << endl;
 }
