@@ -8,8 +8,8 @@ SET(VERSION ${VMAJOR}.${VMINOR})
 
 MESSAGE(STATUS "Building brainfuck interpreter ${VERSION}")
 
-INCLUDE_DIRECTORIES("include/")
-CONFIGURE_FILE(${PROJECT_SOURCE_DIR}/include/config.h.cmake ${PROJECT_SOURCE_DIR}/include/config.h)
+INCLUDE_DIRECTORIES("include/" ${PROJECT_BINARY_DIR}/include)
+CONFIGURE_FILE(${PROJECT_SOURCE_DIR}/include/config.h.cmake ${PROJECT_BINARY_DIR}/include/config.h)
 FILE(
   GLOB_RECURSE
   sources
