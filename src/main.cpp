@@ -78,9 +78,7 @@ int main(int argc, char** argv)
   
   char c;
   
-  f >> c;
-  
-  while(c != EOF) {
+  while(f >> c) {
     if(c == '+' ||
        c == '-' ||
        c == '.' ||
@@ -94,7 +92,7 @@ int main(int argc, char** argv)
     {
       code.push_back(c);
     }
-    c = f.get();
+  
     if(verbose)
       cout << "[VERBOSE] Loaded " << code.size() << " instructions." << "\r";
   }
@@ -112,7 +110,7 @@ int main(int argc, char** argv)
   
   c = code.at(0);
   
-  while(c != EOF) {
+  while(codepointer != code.size()) {
     switch(c) {
       case '@':
         breakpoint(codepointer);
@@ -156,10 +154,13 @@ int main(int argc, char** argv)
     }
     
     codepointer++;
-    c = code.at(codepointer);
+    if(codepointer != code.size())
+    	c = code.at(codepointer);
   }
   
   if(verbose)
     cout << "----------------------------------------" << endl << \
             "[VERBOSE] Program executed successfully." << endl;
+  
+  return EXIT_SUCCESS;
 }
