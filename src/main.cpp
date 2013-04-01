@@ -31,7 +31,7 @@ int main(int argc, char** argv)
   // Vector containing all the brainfuck code to execute
   vector<char> code; // without comments (only '+-><.,[]$@)'
   // The turing tape containing al the cells
-  vector<char> tape;
+  vector<long> tape;
   // LIFO stack with matching bracets
   vector<long> bracets;
   // Cell pointer
@@ -135,7 +135,7 @@ int main(int argc, char** argv)
         tape[pointer]++;
         break;
       case '.':
-        cout << tape.at(pointer);
+        cout << (char)tape.at(pointer);
         break;
       case ',':
         cin >> tape[pointer];

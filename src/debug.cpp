@@ -21,7 +21,7 @@
 
 using namespace std;
 
-void stack_dump(vector<char>* tape) {
+void stack_dump(vector<long>* tape) {
   cout << "+-----------------------------+" << endl;
   cout << "|         STACK DUMP          |" << endl;
   cout << "+-----------------------------+" << endl;

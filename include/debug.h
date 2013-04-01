@@ -24,7 +24,7 @@
 #include <iomanip>
 #include <vector>
 
-void stack_dump(std::vector<char>* tape);
+void stack_dump(std::vector<long>* tape);
 void breakpoint(long codepointer);
 
 #endif
