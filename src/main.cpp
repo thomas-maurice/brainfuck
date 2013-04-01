@@ -36,6 +36,7 @@ int main(int argc, char** argv)
   vector<long> bracets;
   // Cell pointer
   unsigned long pointer = 0;
+  unsigned long steps = 0;
   // Script name
   string fname;
   // Verbose mode ?
@@ -153,6 +154,7 @@ int main(int argc, char** argv)
         
     }
     
+    steps++;
     codepointer++;
     if(codepointer != code.size())
     	c = code.at(codepointer);
@@ -160,7 +162,8 @@ int main(int argc, char** argv)
   
   if(verbose)
     cout << "----------------------------------------" << endl << \
-            "[VERBOSE] Program executed successfully." << endl;
+            "[VERBOSE] Program executed successfully in " << \
+            steps << " steps." << endl;
   
   return EXIT_SUCCESS;
 }
