@@ -35,4 +35,9 @@ ADD_EXECUTABLE(
   ${interpreter_sources}
 )
 
+ADD_EXECUTABLE(
+  int2bf
+  src/int2bf.cpp
+)
+
 INSTALL(TARGETS brainfuck DESTINATION bin)

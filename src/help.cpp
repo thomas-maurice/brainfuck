@@ -64,4 +64,5 @@ cout << "As Wikipedia says :" << endl << endl;
   cout << endl << "In addition, this interpreter provides you two more commands :" << endl;
   cout << "\t@: which sets a breakpoint and waits for the user to hit a key" << endl;
   cout << "\t$: which dumps the content of the program's stack" << endl;
+  cout << "\t*: output the integer value of the current cell" << endl;
 }

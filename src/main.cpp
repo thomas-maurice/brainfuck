@@ -89,6 +89,7 @@ int main(int argc, char** argv)
        c == '[' ||
        c == ']' ||
        c == '@' ||
+       c == '*' ||
        c == '$')
     {
       code.push_back(c);
@@ -135,6 +136,9 @@ int main(int argc, char** argv)
         break;
       case '.':
         cout << (char)tape.at(pointer);
+        break;
+      case '*':
+        cout << (long)tape.at(pointer);
         break;
       case ',':
         cin >> tape[pointer];
