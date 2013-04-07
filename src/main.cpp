@@ -41,6 +41,9 @@ int main(int argc, char** argv)
   string fname;
   // Verbose mode ?
   bool verbose = false;
+  #ifdef WIN32
+  	verbose = true;
+  #endif
   // Pointer on the code array (instruction being executed)
   long codepointer = 0;
   
@@ -168,6 +171,10 @@ int main(int argc, char** argv)
     cout << "----------------------------------------" << endl << \
             "[VERBOSE] Program executed successfully in " << \
             steps << " steps." << endl;
+  
+  #ifdef WIN32
+  	system("pause");
+  #endif
   
   return EXIT_SUCCESS;
 }

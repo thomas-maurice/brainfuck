@@ -36,6 +36,8 @@ int main(int argc, char **argv) {
 	
 	cout << "[<]>[.>]" << endl;
 	
-	
+	#ifdef WIN32
+  	system("pause");
+  #endif
 	return EXIT_SUCCESS;
 }

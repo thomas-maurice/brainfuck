@@ -40,4 +40,7 @@ ADD_EXECUTABLE(
   src/int2bf.cpp
 )
 
-INSTALL(TARGETS brainfuck DESTINATION bin)
+INSTALL(TARGETS brainfuck
+                int2bf
+                str2bf
+                DESTINATION bin)

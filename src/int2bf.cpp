@@ -28,6 +28,8 @@ int main(int argc, char **argv) {
 	cout << "[<" << n_chars(GROUP, '+') << ">-]<";
 	cout <<  n_chars(rem, '+');
 
-	
+	#ifdef WIN32
+  	system("pause");
+  #endif
 	return EXIT_SUCCESS;
 }

@@ -26,6 +26,10 @@ void help() {
   cout << "\tAuthor: Thomas Maurice" << endl;
   cout << "\tVersion: " << VMAJOR << "." << VMINOR << " " << PLATEFORM << endl;
   cout << "\tType `brainfuck -h` for more" << endl;
+  
+  #ifdef WIN32
+  	system("pause");
+  #endif
 }
 
 void ext_help() {
@@ -37,6 +41,10 @@ void ext_help() {
   cout << "\t-v starts a script in verbose mode" << endl;
   cout << "\t-s option provides help on the brainfuck language" << endl;
   cout << "\trunning the program passing it a script name will make it run the script" << endl;
+  
+  #ifdef WIN32
+  	system("pause");
+  #endif
 }
 
 void syntax_help() {
@@ -65,4 +73,8 @@ cout << "As Wikipedia says :" << endl << endl;
   cout << "\t@: which sets a breakpoint and waits for the user to hit a key" << endl;
   cout << "\t$: which dumps the content of the program's stack" << endl;
   cout << "\t*: output the integer value of the current cell" << endl;
+  
+  #ifdef WIN32
+  	system("pause");
+  #endif
 }
