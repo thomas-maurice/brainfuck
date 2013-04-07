@@ -21,6 +21,6 @@ to have some help about Brainfuck syntax.
 
 ##Addition to "standard" Brainfuck
 In addition to the standard specification of the Brainfuck language, this interpreter
-provides two more commands : @ which inserts a breakpoint in the program (it will
-stop and wait until the user hits a key) and $ which dumps the stack (the tape of
-the program)
+provides 3 more commands : @ which inserts a breakpoint in the program (it will
+stop and wait until the user hits a key), $ which dumps the stack (the tape of
+the program) and * which allows you do print the numeric value of a cell instead of the ASCII one.
