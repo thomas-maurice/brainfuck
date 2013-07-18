@@ -21,12 +21,12 @@ FILE(
 )
 
 ADD_EXECUTABLE(
-   bfindent
-   src/bfindent.cpp
+  brainfuck.indent 
+	src/bfindent.cpp
 )
 
 ADD_EXECUTABLE(
-   str2bf
+   brainfuck.string
    src/str2bf.cpp
 )
 
@@ -36,11 +36,12 @@ ADD_EXECUTABLE(
 )
 
 ADD_EXECUTABLE(
-  int2bf
+  brainfuck.integer
   src/int2bf.cpp
 )
 
 INSTALL(TARGETS brainfuck
-                int2bf
-                str2bf
+                brainfuck.integer
+                brainfuck.string
+								brainfuck.indent
                 DESTINATION bin)
